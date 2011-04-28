@@ -117,26 +117,6 @@ public class Device extends Plugin {
 		return Device.phonegapVersion;
 	}	
 
-	public String getLine1Number(){
-	  TelephonyManager operator = (TelephonyManager)this.ctx.getSystemService(Context.TELEPHONY_SERVICE);
-	  return operator.getLine1Number();
-	}
-	
-	public String getDeviceId(){
-	  TelephonyManager operator = (TelephonyManager)this.ctx.getSystemService(Context.TELEPHONY_SERVICE);
-	  return operator.getDeviceId();
-	}
-	
-	public String getSimSerialNumber(){
-	  TelephonyManager operator = (TelephonyManager)this.ctx.getSystemService(Context.TELEPHONY_SERVICE);
-	  return operator.getSimSerialNumber();
-  }
-  
-	public String getSubscriberId(){
-	  TelephonyManager operator = (TelephonyManager)this.ctx.getSystemService(Context.TELEPHONY_SERVICE);
-	  return operator.getSubscriberId();
-	}
-	
 	public String getModel()
 	{
 		String model = android.os.Build.MODEL;
